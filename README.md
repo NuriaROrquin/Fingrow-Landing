@@ -71,9 +71,17 @@ Las capturas salen de la plataforma corriendo en local con los datos demo de Lux
 
 ## Deploy
 
+El `Dockerfile` tiene dos etapas: compila con Node 20 y sirve `dist/` con nginx en el puerto 80.
+
 ```bash
 docker build -t fingrow-landing --build-arg VITE_APP_URL=https://<dominio-de-la-app> .
 docker run -p 8080:80 fingrow-landing
 ```
 
-La imagen sirve `dist/` con nginx.
+En Dokploy:
+
+- **Build Type**: Dockerfile. Docker File, Docker Context Path y Docker Build Stage quedan vacíos
+  (usan `Dockerfile`, `.` y la última etapa).
+- **Build-time Arguments**: `VITE_APP_URL` con el dominio del front de FinGrow (si falta, "Ingresar"
+  apunta a `http://localhost:3000`). `VITE_CONTACT_EMAIL` es opcional.
+- **Dominio**: puerto del contenedor `80`.
