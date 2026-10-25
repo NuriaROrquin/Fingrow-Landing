@@ -1,0 +1,52 @@
+:root {
+  --ink-950: #0f0c1e;
+  --ink-900: #17132b;
+  --ink-850: #1c1734;
+  --ink-800: #231d40;
+  --ink-700: #2f2753;
+  --ink-600: #3f3561;
+  --ink-line: rgba(242, 239, 250, 0.1);
+
+  --paper: #f5f2ec;
+  --paper-2: #ece7de;
+  --paper-line: #ddd6c9;
+  --white: #ffffff;
+
+  --text-dark: #f2effa;
+  --muted-dark: #a79fc4;
+  --text-paper: #1d1830;
+  --muted-paper: #5d5672;
+
+  --leaf-blue: #559ac8;
+  --leaf-violet: #7154b3;
+  --leaf-violet-bright: #9b84ea;
+  --leaf-amber: #fda540;
+  --leaf-coral: #f1573c;
+
+  --band-critical: #f1573c;
+  --band-fragile: #fda540;
+  --band-stable: #559ac8;
+  --band-healthy: #3fb37f;
+
+  --font-display: "Funnel Display", "Funnel Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Funnel Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Fragment Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  --step--1: clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
+  --step-2: clamp(1.35rem, 1.2rem + 0.7vw, 1.75rem);
+  --step-4: clamp(2.1rem, 1.5rem + 3vw, 3.9rem);
+  --step-5: clamp(2.6rem, 1.5rem + 4.7vw, 5.6rem);
+
+  --gutter: clamp(16px, 4vw, 40px);
+  --maxw: 1240px;
+  --section-y: clamp(88px, 12vw, 168px);
+  --radius: 14px;
+  --radius-lg: 22px;
+
+  --shadow-deep: 0 40px 80px -24px rgba(10, 7, 24, 0.55), 0 12px 28px -12px rgba(10, 7, 24, 0.4);
+  --shadow-paper: 0 30px 60px -28px rgba(47, 39, 83, 0.35), 0 10px 20px -12px rgba(47, 39, 83, 0.2);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
